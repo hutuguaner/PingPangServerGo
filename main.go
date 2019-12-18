@@ -47,6 +47,7 @@ func initDB() {
 func main() {
 
 	http.HandleFunc("/getAllUser", getAllUser)
+	http.HandleFunc("/login",login)
 	http.HandleFunc("/regist",regist)
 	http.ListenAndServe(":9090", nil)
 
